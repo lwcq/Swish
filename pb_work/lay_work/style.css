@@ -1,0 +1,61 @@
+/** Swish - Basketball Playbook ***
+*** CSS Stylesheet              ***
+*** (c) 2011 by lib, mhw        **/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, sans-serif;
+    background-color: #131313;
+} 
+
+div.container {
+    width: 950px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 5px;
+    min-height: 400px;
+}
+
+div.top {
+    width: 950px;
+    height: 171px;
+    margin-bottom: 10px;
+}
+
+div.top img {
+    border: none;
+}
+
+div.menu {
+    width: 243px;
+    height: auto;
+    min-height: 400px;
+    float: left;
+    background-image: url('images/menu_bg.png');
+    background-repeat: repeat-y;
+}
+
+div.menu img#m_logo {
+    margin-right: 2px;
+}
+
+div.main {
+    width: 707px;
+    min-height: 400px;
+    float: left;  
+}
+
+div.footer {
+    width: 950px;
+    height: 74px;
+    margin-top: 10px;
+    clear: both;
+    text-align: center;
+    background-image: url('images/footer.png');
+}
+
+div.footer span {
+    font-size: 11px;
+    color: #707070;  
+}

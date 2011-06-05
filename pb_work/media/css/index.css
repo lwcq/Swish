@@ -1,0 +1,29 @@
+#container {
+    width: 800px;
+    border: 1px solid black;
+    min-height: 600px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 800px;
+    height: 200px;
+    border-bottom: 1px solid black;
+}
+
+.menu {
+    width: 150px;
+    height: 399px;
+    border-right: 1px solid black;
+    float: left;
+}
+
+.content {
+    width: 649px;
+    height: 399px;
+    float: left;
+}
+
+#pager a {
+    text-decoration: none;
+}

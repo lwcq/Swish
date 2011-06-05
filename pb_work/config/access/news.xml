@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<news>
+ <access>
+  <show>
+     <rank>administrator</rank>
+     <rank>redactor</rank>
+     <rank>user</rank>
+  </show>
+  
+  <add>
+     <rank>administrator</rank>
+     <rank>redactor</rank>
+  </add>
+  
+  <delete>
+     <rank>administrator</rank>
+  </delete>
+ </access>
+</news>

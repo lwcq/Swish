@@ -1,0 +1,23 @@
+<config>
+ <database>
+  <username></username>
+  <password></password>
+  <dbname></dbname>
+  <host></host>
+ </database>
+ 
+ <core>
+  <defaultController>user</defaultController>
+  <defaultAction>index</defaultAction>
+  <baseUrl></baseUrl>
+  <siteUrl></siteUrl>
+ </core>
+ 
+ <request>
+  <file>index.php</file>
+ </request>
+ 
+ <validator>
+  <email></email>
+ </validator>
+</config>

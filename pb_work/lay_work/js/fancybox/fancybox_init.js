@@ -14,7 +14,12 @@ $(document).ready(function() {
 	
 	$("a.login").fancybox({
         'padding' : 20,
-        'background' : '#777'
 	});
+    
+   	$("a.register").fancybox({
+        'padding' : 20,
+	});
+    
+    
 	
 });

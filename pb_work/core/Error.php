@@ -5,7 +5,7 @@ use core\error\iError;
 
 class Error implements iError {
     
-    public function get($error) {
-        echo $error;
+    public function handle($error) {
+        return $error;
     }
 }

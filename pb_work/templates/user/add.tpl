@@ -13,5 +13,10 @@
       </tr>
       
   </table>
+  
+  <opt:section name="message">
+     <p>{$message}</p>
+  </opt:section>
+  
  </form>
 </opt:root>

@@ -5,7 +5,7 @@ require('./vendor/ActiveRecord.php');
 require('./vendor/OPT/Opl/Base.php');
 require('./core/autoloader/GenericLoader.php');
 
-try {
+//try {
     $loader = new Opl\Autoloader\GenericLoader();
     $loader -> addNamespace('core');
     $loader -> addNamespace('model');
@@ -26,6 +26,8 @@ try {
     $core = new core\Dispatcher($router);
     $core -> init();
     
-} catch(Exception $e) {
+//} 
+
+/*catch(Exception $e) {
     echo $e -> selectActionByPriority();
-}
+}*/

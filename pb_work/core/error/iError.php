@@ -4,5 +4,5 @@ namespace core\error;
 
 interface iError {
   
-    public function get($error);
+    public function handle($error);
 }

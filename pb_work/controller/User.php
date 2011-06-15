@@ -45,14 +45,15 @@ class User extends Controller {
     public function add() {
         $view = new \Opt_View('user/add.tpl'); 
         
-        if($this -> request -> get('post', 'submit')) {
+        if($this -> request -> get('post', 'reg_submit')) {
             $this -> validator = Core::load('core', 'validator', 'factory', 'form');
             $filters[] = $this -> validator -> checkInput($this -> request -> get('post', 'username'), array('username'));
             $filters[] = $this -> validator -> checkInput($this -> request -> get('post', 'email'), array('email'));
             if(is_array($this -> validator -> execute($filters)))
-                $view -> message = $this -> validator -> execute($filters);
+                $view -> message = 'test';//$this -> validator -> execute($filters);
             else {
                 $this -> model -> username = $this -> request -> get('post', 'username');
+                $this -> model -> password = $this -> request -> get('post', 'password');
                 $this -> model -> email = $this -> request -> get('post', 'email');
                 $this -> model -> save();
             }

@@ -11,11 +11,11 @@ class Core {
     private $mode;
     private $method;
     
-    public static function load($type, $name, $mode = 0, $method = '',$param = '', array $params = array()) {
+    public static function load($type, $name, $method = '', $param = '', array $params = array()) {
         $strNS = $type.'\\'.$name;
         
         if(class_exists($strNS)) 
-            if(!$mode)   
+            if($method == '')   
                 return new $strNS($params);
             else
                 return $strNS::$method($param);

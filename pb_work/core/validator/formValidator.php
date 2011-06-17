@@ -2,16 +2,23 @@
 
 namespace core\validator;
 use core\validator\iValidator;
+use core\validator\filter\inputFilter;
 
 class formValidator implements iValidator {
     
-    public function checkInput($data) {
-        if($data == 2)
-            return true;
+    public function checkInput($expression, array $under_filters) {
+        $filter = new inputFilter;
+        
+        foreach($under_filters as $under_filter) {
+            return $filter -> $under_filter($expression);
+        }
     }
     
     public function execute(array $filters) {
-        if(in_array(true, $filters))
-            return true;
+        foreach($filters as $result) {
+            if($result == 0)
+                $tab[] = $result;
+        }
+        return $tab;            
     }
 }

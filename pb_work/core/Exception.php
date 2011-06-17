@@ -11,10 +11,10 @@ class Exception extends \Exception {
     }
     
     public function selectActionByPriority() {
-        if($this -> priority == 0)
+        if($this -> priority == 1)
             return $this -> get404();
-        elseif($this -> priority == 1)
-            return $this -> exception;
+        elseif($this -> priority == 0)
+            return Core::redirect('index.php');
     }
     
     private function get404() {

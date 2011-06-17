@@ -2,6 +2,7 @@
 *** CSS Stylesheet              ***
 *** (c) 2011 by lib, mhw        **/
 
+/* Main elements */
 body {
     margin: 0;
     padding: 0;
@@ -9,6 +10,7 @@ body {
     background-color: #131313;
 } 
 
+/* Container */
 div.container {
     width: 950px;
     height: auto;
@@ -17,6 +19,7 @@ div.container {
     min-height: 400px;
 }
 
+/* Top */
 div.top {
     width: 950px;
     height: 161px;
@@ -52,6 +55,7 @@ div.top a:hover {
     background-image: url('../images/login_h.png');
 }
 
+/* Menu */
 div.left {
     width: 243px;
     height: auto;
@@ -110,6 +114,7 @@ div.left ul.exp a {
     font-size: 12px;
 }
 
+/* Main */
 div.main {
     width: 687px;
     min-height: 400px;
@@ -130,6 +135,16 @@ div.main h1 {
     margin: 0;
 }
 
+div.main h2 {
+    font-size: 16px;
+    color: #ff9900;
+    margin: 0;
+}
+
+div.main a {
+    color: #ff9900;
+}
+
 div.main p {
     font-size: 13px;
     color: #707070;
@@ -141,6 +156,7 @@ div.main blockquote {
     text-align: right;
 }
 
+/* Login Fancybox */
 div#loginfb {
     width: 230px;
     text-align: center;
@@ -171,6 +187,18 @@ div#loginfb span {
     color: #ff9900;
 }
 
+div.error {
+    width: 210px;
+    padding: 3px;
+    margin: 0 auto;
+    margin-top: 5px;
+    text-align: center;
+    color: #ff9900;
+    font-size: 11px;
+    border: 2px dotted #ff9900;
+}
+
+/* Register Fancybox */
 div#registerfb {
     width: 400px;
     text-align: center;
@@ -205,18 +233,19 @@ div#registerfb span {
     color: #ff9900;
 }
 
-
-
+/* Footer */
 div.footer {
     width: 950px;
-    height: 74px;
+    height: 44px;
     margin-bottom: 10px;
+    padding-top: 6px;
     clear: both;
     text-align: center;
     background-image: url('../images/footer.png');
 }
 
 div.footer span {
+    display: block;
     font-size: 11px;
     color: #707070;  
 }

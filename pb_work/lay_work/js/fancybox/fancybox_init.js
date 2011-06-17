@@ -14,10 +14,12 @@ $(document).ready(function() {
 	
 	$("a.login").fancybox({
         'padding' : 20,
+        'hideOnOverlayClick' : false
 	});
     
    	$("a.register").fancybox({
         'padding' : 20,
+        'hideOnOverlayClick' : false
 	});
     
     

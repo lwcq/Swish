@@ -126,7 +126,7 @@ div.main {
 div.main hr {
     height: 1px;
     border: none;
-    background-color: #707070;
+    background-color: #8C8C8C;
 }
 
 div.main h1 {
@@ -147,18 +147,18 @@ div.main a {
 
 div.main p {
     font-size: 13px;
-    color: #707070;
+    color: #8C8C8C;
 }
 
 div.main blockquote {
     font-size: 12px;
-    color: #707070;
+    color: #8C8C8C;
     text-align: right;
 }
 
 div.main input, div.main textarea {
     background-color: #3a3a3a;
-    border: 1px solid #707070;
+    border: 1px solid #8C8C8C;
     color: #a0a0a0;
 }
 
@@ -177,12 +177,12 @@ div#loginfb table {
 
 div#loginfb td {
     padding: 5px;
-    color: #707070;
+    color: #8C8C8C;
 }
 
 div#loginfb input {
     background-color: #3a3a3a;
-    border: 1px solid #707070;
+    border: 1px solid #8C8C8C;
     color: #a0a0a0;
 }
 
@@ -222,13 +222,13 @@ div#registerfb table {
 
 div#registerfb td {
     padding: 5px;
-    color: #707070;
+    color: #8C8C8C;
     text-align: left;
 }
 
 div#registerfb input {
     background-color: #3a3a3a;
-    border: 1px solid #707070;
+    border: 1px solid #8C8C8C;
     color: #a0a0a0;
 }
 
@@ -239,6 +239,26 @@ div#registerfb input:hover {
 div#registerfb span {
     font-size: 20px;
     color: #ff9900;
+}
+
+div#passHelp, div#loginHelp {
+    display: none;
+    width: 325px;
+    height: auto;
+    position: absolute;
+    top: 100px;
+    left: 15px;
+    background-color: #242424;
+    color: #8C8C8C;
+    font-size: 11px;
+    border: 1px solid #8C8C8C;
+    padding: 5px;
+    text-align: left;
+    z-index: 1105;  
+}
+
+div#loginHelp {
+    top: 68px;
 }
 
 /* Footer */
@@ -255,7 +275,7 @@ div.footer {
 div.footer span {
     display: block;
     font-size: 11px;
-    color: #707070;  
+    color: #8C8C8C;  
 }
 
 /* Fancybox Adjust */

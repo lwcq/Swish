@@ -11,6 +11,7 @@
         <script src="js/fancybox/jquery.fancybox-1.3.4.pack.js" type="text/javascript"></script>
         <script src="js/fancybox/fancybox_init.js" type="text/javascript"></script>
         <script src="js/menu.js" type="text/javascript"></script>
+        <script src="js/passHelp.js" type="text/javascript"></script>
     </head>
     <body>
         <div class="container">
@@ -58,10 +59,10 @@
                             <span>Rejestracja</span>
                             <table>
                                 <tr>
-                                    <td>Login:</td><td><input type="text" name=""/></td>
+                                    <td>Login: <a style="font-weight: bold; color: #ff9900; cursor: pointer;" onmouseover="showPassHelp('loginHelp', 1)" onmouseout="showPassHelp('loginHelp', 0)">?</a></td><td><input type="text" name=""/></td>
                                 </tr>
                                 <tr>
-                                    <td>Hasło:</td><td><input type="password" name=""/></td>
+                                    <td>Hasło: <a style="font-weight: bold; color: #ff9900; cursor: pointer;" onmouseover="showPassHelp('passHelp', 1)" onmouseout="showPassHelp('passHelp', 0)">?</a></td><td><input type="password" name=""/></td>
                                 </tr>
                                 <tr>
                                     <td>Powtórz hasło:</td><td><input type="password" name=""/></td>
@@ -75,7 +76,9 @@
                            </table>
                            <input style="margin-top: 6px;" type="submit" value="Rejestruj" name=""/>
                            <div class="error">Lorem ipsum dolor sit amet, consectetur adipisicing!</div>
-                        </form>                         
+                        </form>
+                        <div id="passHelp">Hasło: 8-24 znaków, jedna wielka i mała litera, jedna cyfra.</div>  
+                        <div id="loginHelp">Nazwa użytkownika: 5-15 znaków, nie może zaczynać się od cyfry i znaków specjalnych, może zawierać małe i wielkie znaki oraz cyfry.</div>                                                
                     </div>
                 </div>
                 <h1>Pomoc -> Jes-Soft Basketball Playbook</h1><hr />
@@ -84,9 +87,9 @@
                 <p>Obsługa aplikacji jest bardzo prosta - polecamy obejrzeć krótkie <a href="http://www.jes-basketball.com/playbook/animation.html">demo flash</a>.</p>
                 <h2>Eksport zagrywki do formatów jpg i flash</h2>
                 <p>Aby wyeksportować zagrywkę do formatu jpg wybierz File -> Export -> Image 200%. Następnie wybierz gdzie zapisać obrazek oraz zaznacz format wyjściowy JPG.</p>
-                <img src="images/export_jpg.jpg"/>
+                <img src="images/export_jpg.jpg" alt="export jpg"/>
                 <p>Aby wyeksportować zagrywkę do formatu flash wybierz File -> Export -> Play -> zakładka Flash. Odznacz opcję "Within html page", kliknij OK i wybierz gdzie zapisać plik wynikowy.</p>
-                <img src="images/export_flash.jpg"/>
+                <img src="images/export_flash.jpg" alt="export flash"/>
             </div>
             <div class="footer">
                 <span>Swish - Basketball Playbook</span>

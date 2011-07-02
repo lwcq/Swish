@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Swish - Basketball Playbook</title>
+        <meta name="author" content="lib, mhw"/>
+        <meta name="description" content="Swish - Basketball Playbook"/>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../js/fancybox/jquery.fancybox-1.3.4.css" type="text/css"/>
+        <script src="../js/jquery161.js" type="text/javascript"></script>
+        <script src="../js/fancybox/jquery.fancybox-1.3.4.pack.js" type="text/javascript"></script>
+        <script src="../js/fancybox/fancybox_init.js" type="text/javascript"></script>
+        <script src="../js/menu.js" type="text/javascript"></script>
+        <script src="../js/passHelp.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="top">
+                <a href="index.html"><img id="logotyp" src="../images/logo.png" alt="logo"/></a>
+                <a id="logout" href="#"></a>
+                <span id="loggedAs">Jesteś zalogowany jako: [nick]</span>
+            </div>
+            <div class="left">
+                <img id="m_logo" src="../images/menu.png" alt="menu logo"/>
+                <ul>
+                    <li>
+                        Zagrywki
+                        <ul class="exp">
+                            <li><a href="">Przeglądaj</a></li>
+                            <li><a href="">Dodaj</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Drużyny
+                        <ul class="exp">
+                            <li><a href="#">Przeglądaj</a></li>
+                            <li><a href="#">Utwórz</a></li>
+                            <li><a href="#">Zarządzaj</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Pomoc
+                        <ul class="exp">
+                            <li><a href="pomoc_wp.html">Wprowadzenie</a></li>
+                            <li><a href="pomoc_jsbp.html">Jes-Soft Basketball Playbook</a></li>
+                            <li><a href="#">Zarządzanie zagraniami</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="op.html">O projekcie</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="#">Wyloguj</a></li>
+                </ul>
+            </div>
+            <div class="main"> 
+                <h1>Zagrywki -> Dodaj</h1><hr />
+                <span>Wybierz drużynę:</span><br />
+                    <select>
+                        <option value="1">Druzyna 1</option>
+                        <option value="2">Druzyna 2</option>
+                    </select>
+                
+                    <hr />
+                    <form method="post" action="" name="">
+                        <table>
+                            <tr>
+                                <td>Nazwa:</td><td><input type="text" name=""/></td>
+                            </tr>
+                            <tr>
+                                <td>Szkic (jpg):</td><td><input type="file" name=""/></td>
+                            </tr>
+                            <tr>
+                                <td>Flash: <span style="color: #ff9900;">*</span></td><td><input type="file" name=""/></td>
+                            </tr>
+                            <tr>
+                                <td>Plik zagrywki (epb):</td><td><input type="file" name=""/></td>
+                            </tr>
+                            <tr>
+                                <td>Opis:</td><td><textarea name="" rows="5" cols="35"></textarea></td>
+                            </tr>
+                        </table>
+                        <input type="submit" name="" value="Dodaj"/>
+                    </form><br />
+                    <span style="color: #ff9900;">*</span><span> - pole opcjonalne</span>
+            </div>
+            <div class="footer">
+                <span>Swish - Basketball Playbook</span>
+                <span>2011 &copy; by Bartosz Szabanowski &amp; Michał Gumny / gfx: Michał Korwin-Piotrowski</span> 
+            </div>
+        </div>
+    </body>
+</html>

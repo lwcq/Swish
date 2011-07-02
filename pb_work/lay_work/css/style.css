@@ -42,7 +42,7 @@ div.top img#logotyp {
     margin-left: 800px;
 }*/
 
-div.top a.login {
+div.top a#login {
     display: block;
     width: 116px;
     height: 31px;
@@ -51,8 +51,30 @@ div.top a.login {
 }
 
 
-div.top a:hover {
+div.top a#login:hover {
     background-image: url('../images/login_h.png');
+}
+
+div.top a#logout {
+    display: block;
+    width: 116px;
+    height: 31px;
+    margin-left: 800px;
+    background-image: url('../images/logout_n.png');
+}
+
+
+div.top a#logout:hover {
+    background-image: url('../images/logout_h.png');
+}
+
+div.top span#loggedAs {
+    display: block;
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 102px;
+    color: #ff9900;
+    font-size: 12px;
 }
 
 /* Menu */
@@ -110,6 +132,10 @@ div.left ul.exp {
     padding-left: 15px;
 }
 
+div.left ul.exp li {
+    margin-bottom: 5px;
+}
+
 div.left ul.exp a {
     font-size: 12px;
 }
@@ -121,6 +147,10 @@ div.main {
     margin-bottom: 10px;
     padding: 10px;
     float: left;  
+}
+
+div.main span {
+    color: #8C8C8C;
 }
 
 div.main hr {
@@ -161,6 +191,72 @@ div.main input, div.main textarea {
     border: 1px solid #8C8C8C;
     color: #a0a0a0;
 }
+
+div.main select {
+    margin-top: 3px;
+    background-color: #3a3a3a;
+    border: 1px solid #8C8C8C;
+    color: #a0a0a0;
+}
+
+div.main table {
+    color: #8C8C8C;
+}
+
+div.tableVisible table {
+    width: 670px;
+    border: 1px solid #8C8C8C;
+    border-collapse: collapse;
+}
+
+div.tableVisible table td, div.tableVisible table th {
+    padding: 5px;
+    border: 1px solid #8C8C8C;
+}
+
+div.tableVisible table td {
+    font-size: 14px;
+    color: #8C8C8C;
+}
+
+div.tableVisible table th {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff9900;
+    background-color: #292929;
+    
+}
+
+div.tableVisible table td#teamLogo {
+    text-align: center;
+}
+
+div.tableVisible table td#teamLogo img {
+    width: 150px;
+    height: 150px;
+}
+
+div.tableVisible table td#teamName {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+div.tableVisible table td#teamRoster {
+    width: 250px;
+}
+
+div.tableVisible table td#teamRoster ul {
+    margin: 5px;
+    padding-left: 20px;
+}
+
+div.tableVisible table td ul {
+    margin: 3px;
+    padding-left: 20px;
+}
+
+
 
 
 
